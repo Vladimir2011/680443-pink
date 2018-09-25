@@ -28,7 +28,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455696/52f9152e-206d-11e6-9e2d-5c6a68f29419.png">
 
-Получится вот так::
+Получится вот так:
 
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455697/531c27c6-206d-11e6-80d5-365e13dd691d.png">
 
