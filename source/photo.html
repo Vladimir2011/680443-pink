@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приложение "Пинк"</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="80" height="25" alt="Приложение «Пинк»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__header">Фотографии пользователей</h1>
+    </header>
+
+    <main class="page-main">
+      <section class="photo">
+        <p class="photo__header">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает ваших?</p>
+
+        <div class="photo__list">
+          <div class="photo__item">
+            <div class="photo__wrapper">
+              <img class="photo__day" src="http://placehold.it/320x140">
+            </div>
+            <p class="photo__title">Анна<time class="photo__time">(5 минут назад)</time></p>
+            <p class="photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__like">Нравится: 215</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Левон<time class="photo__time"> (5 часов назад)</time></p>
+            <p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__like">Нравится: 356</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Антон<time class="photo__time"> (12 часов назад)</time></p>
+            <p class="photo__description">Соседи будут рады!</p>
+            <div class="photo__like-wrapper"></div>
+              <p class="photo__like">Нравится: 666</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Борис<time class="photo__time"> (20 часов назад)</time></p>
+            <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__lik">Нравится: 215</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            <div class="photo__like-wrapper"></div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Сергей<time class="photo__time"> (25 часов назад)</time></p>
+            <p class="photo__description">Самая кубанская в мире.</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__like">Нравится: 4</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Максим<time class="photo__time"> (40 часов назад)</time></p>
+            <p class="photo__description">Где снег-то?</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__like">Нравится: 150</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+
+          <div class="photo__item">
+            <div class="photo__item photo">
+              <img class="photo__image" src="http://placehold.it/280x180">
+            </div>
+            <p class="photo__title">Надежда<time class="photo__time"> (45 часов назад)</time></p>
+            <p class="photo__description">Всем GM и взаимные лайки!</p>
+            <div class="photo__like-wrapper">
+              <p class="photo__like">Нравится: 2560</p>
+              <a class="photo__like-icon visually-hidden" href="#"></a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="post">
+        <p class="post__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="post__form">
+          <img src="http://placehold.it/280x350">
+          <p class="post__icons">
+            <button class="post__icon" type="button">Обрезать</button>
+            <button class="post__icon" type="button">Заливка</button>
+            <button class="post__icon" type="button">Настройка яркости(коррекция)</button>
+          </p>
+          <div class="post__range-controls">
+            <div class="post__scale">
+              <div class="post__bar"></div>
+            </div>
+            <div class="post__range-toggle"></div>
+          </div>
+
+          <div class="post__button-wrapper">
+            <button class="post__send button" href="#">Запостить</a>
+            <button class="post__cancel button" href="#">Отменить</a>
+          </div>
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
+        </a>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link copyright__link--academy visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </footer>
+
+    </body>
+  </html>
