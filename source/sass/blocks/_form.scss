@@ -1,0 +1,33 @@
+.form__paragraph {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.form__set-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+}
+
+.form__set:nth-child(3) {
+  background-color: #f2f2f2;
+}
+
+.form__set:nth-child(5) {
+  background-color: #f2f2f2;
+}
+
+.form__submit {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__note {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form__note span {
+  color: red;
+}

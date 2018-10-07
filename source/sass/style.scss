@@ -1,3 +1,32 @@
+html,
 body {
-  background: red;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Arial' sans-serif;
+  font-size: 18px;
 }
+
+
+@import "blocks/_page-header.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_page-main.scss";
+@import "blocks/_platform.scss";
+@import "blocks/_advantages.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_service.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_map.scss";
+@import "blocks/_shared-photos.scss";
+@import "blocks/_item-photo.scss";
+@import "blocks/_post.scss";
+@import "blocks/_page-footer.scss";
+@import "blocks/_social.scss";
+@import "blocks/_copyright.scss";
+@import "blocks/_form.scss";
+@import "blocks/_field.scss";
+@import "blocks/_checkbox.scss";
+@import "blocks/_radio.scss";
+@import "blocks/_pop-up-correct.scss";
+@import "blocks/_pop-up-error.scss";
+
+
