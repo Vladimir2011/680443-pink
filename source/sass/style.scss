@@ -1,3 +1,6 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "scaffolding.scss";
+@import "font-file.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
@@ -19,4 +22,4 @@
 @import "blocks/radio.scss";
 @import "blocks/button.scss";
 @import "blocks/pop-up.scss";
-@import "scaffolding.scss";
+@import "blocks/visually-hidden.scss";
