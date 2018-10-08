@@ -3,18 +3,20 @@ html {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2"),
-      url("../fonts/opensanslight.woff1");
+       url("../fonts/opensanslight.woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -22,7 +24,7 @@ body {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2"),
-      url("../fonts/opensansbold.woff1");
+       url("../fonts/opensansbold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -30,7 +32,7 @@ body {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2"),
-      url("../fonts/opensans.woff1");
+       url("../fonts/opensans.woff");
   font-style: normal;
 }
 
