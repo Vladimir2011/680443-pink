@@ -1,5 +1,9 @@
 .platform {
   background-color: #1d2631;
+  width: 320px;
+  margin: 0 auto;
+  // ---
+  min-height: 270px;
 }
 
 .platform__download {
@@ -8,6 +12,12 @@
   line-height: 1;
   text-decoration: none;
   font-weight: bold;
+}
+
+.platform__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .platform__paragraph {

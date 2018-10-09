@@ -1,8 +1,17 @@
 .post {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.post__form {
   background-color: #f2f2f2;
 }
 
 .post__header {
   font-size: 14px;
   line-height: 2.14;
+}
+
+.post__icons {
+  text-align: center;
 }

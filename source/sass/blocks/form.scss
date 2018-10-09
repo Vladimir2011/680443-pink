@@ -1,3 +1,14 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form__set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .form__paragraph {
   font-size: 14px;
   line-height: 2.1;

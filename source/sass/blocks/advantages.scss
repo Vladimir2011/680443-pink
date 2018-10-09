@@ -1,3 +1,14 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+  //
+  min-height: 1000px;
+}
+
+.advantages__header {
+  // ---
+  min-height: 250px;
+}
 .advantages__slogan {
   font-size: 24px;
 }
@@ -9,6 +20,8 @@
 
 .advantages__item {
   list-style: none;
+  //----
+  min-height: 130px;
 }
 
 .advantages__title {
