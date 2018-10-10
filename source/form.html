@@ -25,9 +25,9 @@
     </header>
 
     <main class="page-main">
+      <p class="page-main__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <fieldset class="form__set">
+        <fieldset class="form__set name">
           <label class="field form__field">
             <span class="field__name">Фамилия:</span>
             <input class="field__input" type="text" placeholder="Укажите фамилию *" name="lastname" required>
@@ -42,7 +42,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__set form__set--background">
+        <fieldset class="form__set achievement form__set--background">
           <legend class="form__set-title">Ваши безбашенные достижения в путешествии</legend>
 
           <label class="checkbox form__field">
@@ -71,7 +71,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__set">
+        <fieldset class="form__set number">
           <label class="field form__field">
             <span class="field__name">Номер телефона</span>
             <input class="field__input" type="tel" placeholder="Номер, пожалуйста" name="phone">
@@ -82,7 +82,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__set form__set--background">
+        <fieldset class="form__set apps form__set--background">
           <legend class="form__set-title">С каким приложением путешествовали?</legend>
 
           <label class="radio form__field">
@@ -112,34 +112,38 @@
           </div>
         </fieldset>
 
-        <button class="button form__submit" type="submit">Отправить форму</button>
+        <div class="form__wrapper">
+          <button class="button form__submit" type="submit">Отправить форму</button>
 
-        <p class="form__note"><span class="form__note--color">*</span> — обязательные поля</p>
+          <p class="form__note"><span class="form__note--color">*</span> — обязательные поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
-      </a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
+        </a>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
-          </li>
-        </ul>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link copyright__link--academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link copyright__link--academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
       </footer>
 

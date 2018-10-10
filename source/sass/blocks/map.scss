@@ -7,3 +7,25 @@
   width: 320px;
   height: 210px;
 }
+
+@media (min-width: $tablet) {
+  .map {
+    width: 660px;
+  }
+
+  .map__image {
+    width: 620px;
+    height: 370px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map {
+    width: 960px;
+  }
+
+  .map__image {
+    width: 960px;
+    height: 500px;
+  }
+}

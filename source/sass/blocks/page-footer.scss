@@ -3,3 +3,33 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    width: 660px;
+  }
+
+  .page-footer__logo {
+    width: 150px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    width: 960px;
+  }
+
+  .page-footer__logo {
+    width: 160px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

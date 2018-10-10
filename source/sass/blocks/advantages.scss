@@ -33,3 +33,40 @@
   font-size: 14px;
   line-height: 1.7;
 }
+
+@media (min-width: $tablet) {
+  .advantages {
+    width: 660px;
+  }
+
+  .advantages__wrapper {
+    width: 660px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .advantages__list {
+    width: 320px;
+  }
+
+  .advantages__image {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages {
+    width: 960px;
+  }
+
+  .advantages__list {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__image {
+    display: none;
+  }
+}

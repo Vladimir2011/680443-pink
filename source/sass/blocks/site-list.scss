@@ -12,3 +12,14 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media (min-width: $desktop) {
+  .site-list {
+    width: 790px;
+  }
+
+  .site-list__item {
+    //
+    width: 150px;
+  }
+}

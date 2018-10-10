@@ -20,3 +20,15 @@
 .reviews__toggles {
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .reviews {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reviews {
+    width: 960px;
+  }
+}

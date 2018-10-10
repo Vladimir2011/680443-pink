@@ -43,3 +43,33 @@
   // ----
   min-height: 100px;
 }
+
+@media (min-width: $tablet) {
+  .service {
+    width: 660px;
+  }
+
+  .service__list {
+    width: 470px;
+    display: flex;
+  }
+
+  .service__toogles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .service {
+    width: 960px;
+  }
+
+  .service__list {
+    width: 710px;
+    display: flex;
+  }
+
+  .service__toggles {
+    display: none;
+  }
+}

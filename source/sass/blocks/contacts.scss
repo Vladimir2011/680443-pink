@@ -21,3 +21,35 @@
   text-decoration: none;
   color: #de6183;
 }
+
+@media (min-width: $tablet) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    width: 960px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 315px;
+  }
+}

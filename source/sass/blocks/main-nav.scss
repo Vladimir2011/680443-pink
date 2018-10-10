@@ -8,4 +8,12 @@
   padding: 0;
 
   list-style: none;
+  visibility: hidden;
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
 }

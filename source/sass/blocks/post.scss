@@ -15,3 +15,33 @@
 .post__icons {
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .post {
+    width: 660px;
+  }
+
+  .post__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__wrapper {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .post {
+    width: 960px;
+  }
+
+  .post__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__wrapper {
+    width: 470px;
+  }
+}

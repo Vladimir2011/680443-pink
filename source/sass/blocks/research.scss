@@ -1,0 +1,44 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .research {
+    display: block;
+  }
+
+  .research__wrapper {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .research__image {
+    width: 300px;
+  }
+
+  .research__description {
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .research {
+    display: block;
+  }
+
+  .research__wrapper {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .research__image {
+    width: 380px;
+  }
+
+  .research__description {
+    width: 570px;
+  }
+}
+
