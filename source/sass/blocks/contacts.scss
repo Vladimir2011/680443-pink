@@ -1,6 +1,5 @@
 .contacts {
-  width: 320px;
-  margin: 0 auto;
+  @include container;
 }
 
 .contacts__slogan {
@@ -23,10 +22,6 @@
 }
 
 @media (min-width: $tablet) {
-  .contacts {
-    width: 660px;
-  }
-
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
@@ -39,10 +34,6 @@
 }
 
 @media (min-width: $desktop) {
-  .contacts {
-    width: 960px;
-  }
-
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,6 +41,6 @@
   }
 
   .contacts__item {
-    width: 315px;
+    width: 210px;
   }
 }

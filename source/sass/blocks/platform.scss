@@ -1,7 +1,6 @@
 .platform {
   background-color: #1d2631;
-  width: 320px;
-  margin: 0 auto;
+  padding: 0;
   // ---
   min-height: 270px;
 }
@@ -40,7 +39,7 @@
     margin-right: 320px;
   }
 
-  .platform__paragraph {
+  .platform__header {
     display: block;
   }
 }
@@ -49,7 +48,7 @@
   .platform {
     background-color: transparent;
     // временно
-    width: 380px;
+    width: 370px;
     margin-right: 580px;
   }
 

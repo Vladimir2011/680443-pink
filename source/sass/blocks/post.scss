@@ -1,15 +1,15 @@
-.post {
-  width: 320px;
-  margin: 0 auto;
+.post__background-wrapper {
+  background-color: #f2f2f2;
 }
 
 .post__form {
-  background-color: #f2f2f2;
+  @include container;
 }
 
 .post__header {
   font-size: 14px;
   line-height: 2.14;
+  @include container;
 }
 
 .post__icons {
@@ -17,9 +17,6 @@
 }
 
 @media (min-width: $tablet) {
-  .post {
-    width: 660px;
-  }
 
   .post__form {
     display: flex;
@@ -32,8 +29,9 @@
 }
 
 @media (min-width: $desktop) {
+  
   .post {
-    width: 960px;
+    @include container;
   }
 
   .post__form {

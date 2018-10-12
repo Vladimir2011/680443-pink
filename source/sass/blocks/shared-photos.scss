@@ -1,23 +1,14 @@
-.shared-photos {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .shared-photos__header {
+  @include container;
   font-size: 14px;
   line-height: 2.14;
 }
 
+.shared-photos__wrapper {
+  @include container;
+}
+
 @media (min-width: $tablet) {
-  .shared-photos {
-    width: 620px;
-    padding: 0 20px;
-  }
-
-  .shared-photos .item-photo:first-child {
-    width: 660px;
-  }
-
   .shared-photos__wrapper .item-photo:first-child {
     width: 300px;
   }
@@ -35,15 +26,6 @@
 }
 
 @media (min-width: $desktop) {
-  .shared-photos {
-    width: 940px;
-    padding: 0 10px;
-  }
-
-  .shared-photos .item-photo:first-child {
-    width: 960px;
-  }
-
   .shared-photos__wrapper .item-photo:first-child {
     width: 300px;
     margin: 0;

@@ -4,11 +4,11 @@
 
 @media (min-width: $tablet) {
   .research {
+    @include container;
     display: block;
   }
 
   .research__wrapper {
-    width: 660px;
     display: flex;
     justify-content: space-between;
   }
@@ -25,20 +25,21 @@
 @media (min-width: $desktop) {
   .research {
     display: block;
+    background-color: #f2f2f2;
   }
 
   .research__wrapper {
-    width: 960px;
+    @include container;
     display: flex;
     justify-content: space-between;
   }
 
   .research__image {
-    width: 380px;
+    width: 370px;
   }
 
   .research__description {
-    width: 570px;
+    width: 560px;
   }
 }
 
