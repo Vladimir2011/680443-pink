@@ -1,9 +1,20 @@
+.service {
+  background-color: #f2f2f2;
+}
+
+.service__wrapper {
+  @include container;
+}
+
 .service__plan {
   background-color: #283645;
+  // --
+  min-height: 100px;
 }
 
 .service__item {
   list-style: none;
+  padding: 0;
 }
 
 .service__type {
@@ -25,4 +36,37 @@
   font-size: 14px;
   line-height: 2.14;
   text-transform: uppercase;
+  //
+  min-height: 60px;
+}
+
+.service__toggles {
+  background-color: #f2f2f2;
+  text-align: center;
+  // ----
+  min-height: 100px;
+}
+
+@media (min-width: $tablet) {
+  
+  .service__list {
+    width: 470px;
+    display: flex;
+  }
+
+  .service__toogles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .service__list {
+    width: 710px;
+    display: flex;
+  }
+
+  .service__toggles {
+    display: none;
+  }
 }

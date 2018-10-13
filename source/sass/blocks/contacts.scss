@@ -1,3 +1,7 @@
+.contacts {
+  @include container;
+}
+
 .contacts__slogan {
   font-size: 24px;
   text-transform: uppercase;
@@ -15,4 +19,28 @@
 .contacts__data {
   text-decoration: none;
   color: #de6183;
+}
+
+@media (min-width: $tablet) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 210px;
+  }
 }

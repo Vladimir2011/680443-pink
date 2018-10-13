@@ -1,3 +1,7 @@
+.reviews {
+  @include container;
+}
+
 .reviews__author-name {
   font-weight: bold;
   font-size: 18px;
@@ -8,4 +12,8 @@
 .reviews__description {
   font-size: 14px;
   line-height: 2.14;
+}
+
+.reviews__toggles {
+  text-align: center;
 }

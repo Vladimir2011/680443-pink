@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение "Пинк"</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Приложение «Пинк»">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__image-wrapper">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Приложение «Пинк»">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="#">HTML Academy</a></li>
+            </ul>
+          </nav>
+          <h1 class="page-header__header">Фотографии пользователей</h1>
+        </div>
       </div>
-      <h1 class="page-header__header">Фотографии пользователей</h1>
     </header>
 
     <main class="page-main">
@@ -31,71 +35,89 @@
         <div class="shared-photos__list">
           <div class="shared-photos item-photo">
             <img class="item-photo__image--day" src="img/panorama-mobile@1x.jpg" width="320px" height="140px" alt="прыжок">
-            <p class="item-photo__title">Анна<time class="item-photo__time" datetime="2018-10-06T23:17">(5 минут назад)</time></p>
-            <p class="item-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 215</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="item-photo__center">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Анна<time class="item-photo__time" datetime="2018-10-06T23:17">(5 минут назад)</time></p>
+                <p class="item-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 215</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="луна">
-            <p class="item-photo__title">Левон<time class="item-photo__time" datetime="2018-10-06T23:17"> (5 часов назад)</time></p>
-            <p class="item-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 356</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+          <div class="shared-photos__wrapper">
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="луна">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Левон<time class="item-photo__time" datetime="2018-10-06T23:17"> (5 часов назад)</time></p>
+                <p class="item-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 356</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="барабаны">
-            <p class="item-photo__title">Антон<time class="item-photo__time" datetime="2018-10-06T23:17"> (12 часов назад)</time></p>
-            <p class="item-photo__description">Соседи будут рады!</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 666</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="барабаны">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Антон<time class="item-photo__time" datetime="2018-10-06T23:17"> (12 часов назад)</time></p>
+                <p class="item-photo__description">Соседи будут рады!</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 666</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="красота">
-            <p class="item-photo__title">Борис<time class="item-photo__time" datetime="2018-10-06T23:17"> (20 часов назад)</time></p>
-            <p class="item-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 215</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="красота">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Борис<time class="item-photo__time" datetime="2018-10-06T23:17"> (20 часов назад)</time></p>
+                <p class="item-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 215</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="самая">
-            <p class="item-photo__title">Сергей<time class="item-photo__time" datetime="2018-10-06T23:17"> (25 часов назад)</time></p>
-            <p class="item-photo__description">Самая кубанская в мире.</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 4</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="самая">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Сергей<time class="item-photo__time" datetime="2018-10-06T23:17"> (25 часов назад)</time></p>
+                <p class="item-photo__description">Самая кубанская в мире.</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 4</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="снег">
-            <p class="item-photo__title">Максим<time class="item-photo__time" datetime="2018-10-06T23:17"> (40 часов назад)</time></p>
-            <p class="item-photo__description">Где снег-то?</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 150</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="снег">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Максим<time class="item-photo__time" datetime="2018-10-06T23:17"> (40 часов назад)</time></p>
+                <p class="item-photo__description">Где снег-то?</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 150</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="shared-photos item-photo">
-            <img class="item-photo__image" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="взаимно">
-            <p class="item-photo__title">Надежда<time class="photo__time" datetime="2018-10-06T23:17"> (45 часов назад)</time></p>
-            <p class="item-photo__description">Всем GM и взаимные лайки!</p>
-            <div class="item-photo__like-wrapper">
-              <p class="item-photo__like">Нравится: 2560</p>
-              <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+            <div class="shared-photos item-photo">
+              <img class="item-photo__image" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="взаимно">
+              <div class="item-photo__background">
+                <p class="item-photo__title">Надежда<time class="photo__time" datetime="2018-10-06T23:17"> (45 часов назад)</time></p>
+                <p class="item-photo__description">Всем GM и взаимные лайки!</p>
+                <div class="item-photo__like-wrapper">
+                  <p class="item-photo__like">Нравится: 2560</p>
+                  <a class="item-photo__like-icon" href="#"><span class="visually-hidden">Мне нравится</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,50 +125,58 @@
 
       <section class="post">
         <p class="post__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="post__form">
-          <img src="img/photo-road-mobile@1x.jpg" width="280px" height="350px" alt="фото для изменения">
-          <p class="post__icons">
-            <button class="post__icon" type="button"><span class="visually-hidden">Обрезать</span></button>
-            <button class="post__icon" type="button"><span class="visually-hidden">Заливка</span></button>
-            <button class="post__icon" type="button"><span class="visually-hidden">Настройка яркости(коррекция)</span></button>
-          </p>
-          <div class="post__range-controls">
-            <div class="post__scale">
-              <div class="post__bar"></div>
-            </div>
-            <div class="post__range-toggle"></div>
-          </div>
+        <div class="post__background-wrapper">
+          <form class="post__form">
+            <img src="img/photo-road-mobile@1x.jpg" width="280px" height="350px" alt="фото для изменения">
+            <div class="post__wrapper">
+              <p class="post__icons">
+                <button class="post__icon" type="button"><span class="visually-hidden">Обрезать</span></button>
+                <button class="post__icon" type="button"><span class="visually-hidden">Заливка</span></button>
+                <button class="post__icon" type="button"><span class="visually-hidden">Настройка яркости(коррекция)</span></button>
+              </p>
+              <div class="post__range-controls">
+                <div class="post__scale">
+                  <div class="post__bar"></div>
+                </div>
+                <div class="post__range-toggle"></div>
+              </div>
 
-          <div class="post__button-wrapper">
-            <button class="post__send button" type="submit">Запостить</button>
-            <button class="post__cancel button" type="reset">Отменить</button>
-          </div>
-        </form>
+              <div class="post__button-wrapper">
+                <button class="post__send button" type="submit">Запостить</button>
+                <button class="post__cancel button" type="reset">Отменить</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
       <footer class="page-footer">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
-        </a>
+        <div class="page-footer__center">
+          <div class="page-footer__wrapper">
+            <a class="page-footer__logo">
+              <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
+            </a>
 
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
-            </li>
-          </ul>
-        </div>
+            <div class="page-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
+                </li>
+              </ul>
+            </div>
 
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link copyright__link--academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+            <div class="page-footer__copyright copyright">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link copyright__link--academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+            </div>
+          </div>
         </div>
       </footer>
 

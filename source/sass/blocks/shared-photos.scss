@@ -1,4 +1,44 @@
 .shared-photos__header {
+  @include container;
   font-size: 14px;
   line-height: 2.14;
+}
+
+.shared-photos__wrapper {
+  @include container;
+}
+
+@media (min-width: $tablet) {
+  .shared-photos__wrapper .item-photo:first-child {
+    width: 300px;
+  }
+
+  .shared-photos__wrapper .item-photo {
+    width: 300px;
+    margin: 0;
+  }
+
+  .shared-photos__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop) {
+  .shared-photos__wrapper .item-photo:first-child {
+    width: 300px;
+    margin: 0;
+  }
+
+  .shared-photos__wrapper .item-photo {
+    width: 300px;
+    margin: 0;
+  }
+
+  .shared-photos__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

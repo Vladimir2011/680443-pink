@@ -1,4 +1,32 @@
+.social {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .social__list {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
   padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    width: 320px;
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social {
+    width: 640px;
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

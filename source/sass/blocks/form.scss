@@ -1,3 +1,9 @@
+.form__set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .form__paragraph {
   font-size: 14px;
   line-height: 2.1;
@@ -26,4 +32,78 @@
 
 .form__note--color {
   color: red;
+}
+
+@media (min-width: $tablet) {
+  .form {
+    @include container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__set--background {
+    background-color: #ffffff;
+  }
+
+  .achievement {
+    order: -1;
+  }
+
+  .apps {
+    order: -3;
+  }
+
+  .name {
+    order: -4;
+  }
+
+  .number {
+    order: -2;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .form {
+    @include container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__set--background {
+    background-color: #ffffff;
+  }
+
+  .achievement {
+    order: -1;
+  }
+
+  .apps {
+    order: -3;
+    width: 470px;
+  }
+
+  .name {
+    order: -4;
+    width: 470px;
+  }
+
+  .number {
+    order: -2;
+  }
+
+  .number .form__field {
+    width: 410px;
+  }
+
+  .form__wrapper {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

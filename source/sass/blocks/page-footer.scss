@@ -1,3 +1,33 @@
 .page-footer {
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet) {
+  .page-footer__logo {
+    width: 150px;
+  }
+
+  .page-footer__center {
+    @include container;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__logo {
+    width: 160px;
+  }
+
+  .page-footer__center {
+    @include container;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

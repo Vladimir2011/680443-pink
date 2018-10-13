@@ -1,8 +1,45 @@
-.post {
+.post__background-wrapper {
   background-color: #f2f2f2;
+}
+
+.post__form {
+  @include container;
 }
 
 .post__header {
   font-size: 14px;
   line-height: 2.14;
+  @include container;
+}
+
+.post__icons {
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+
+  .post__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__wrapper {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .post {
+    @include container;
+  }
+
+  .post__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post__wrapper {
+    width: 470px;
+  }
 }

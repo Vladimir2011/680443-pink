@@ -1,0 +1,45 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .research {
+    @include container;
+    display: block;
+  }
+
+  .research__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .research__image {
+    width: 300px;
+  }
+
+  .research__description {
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .research {
+    display: block;
+    background-color: #f2f2f2;
+  }
+
+  .research__wrapper {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .research__image {
+    width: 370px;
+  }
+
+  .research__description {
+    width: 560px;
+  }
+}
+
