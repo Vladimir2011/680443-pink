@@ -1,17 +1,25 @@
-.site-list__item {
-  font-size: 18px;
-  line-height: 1.7;
-  text-transform: uppercase;
+.site-list {
   font-weight: bold;
-
-  // временно
-  min-height: 60px;
 }
 
-.site-list__item a {
+.site-list a {
+  display: block;
+
+  padding-bottom: 21px;
+  padding-top: 21px;
+
+  font-size: 18px;
+  line-height: 2;
   color: #ffffff;
+  text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  background-color: #283645;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #485461;
 }
+
 
 @media (min-width: $desktop) {
   .site-list {
