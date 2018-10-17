@@ -4,12 +4,14 @@
 
 .advantages__header {
   @include container;
-  // ---
-  min-height: 250px;
+  padding-top: 45px;
 }
 
 .advantages__slogan {
   font-size: 24px;
+  margin: 0;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .advantages__list {
@@ -18,18 +20,29 @@
 
 .advantages__item {
   list-style: none;
-  //----
-  min-height: 130px;
+  text-align: center;
+
+  &:last-child {
+    padding-bottom: 50px;
+  }
 }
 
 .advantages__title {
   font-size: 18px;
   line-height: 1.3;
+  margin: 0;
+  padding-top: 40px;
 }
 
 .advantages__description {
   font-size: 14px;
   line-height: 1.7;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.advantages__image {
+  text-align: center;
 }
 
 @media (min-width: $tablet) {

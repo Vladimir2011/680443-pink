@@ -7,13 +7,32 @@
   font-size: 18px;
   line-height: 1.6;
   text-decoration: none;
+  text-align: center;
+  margin: 0;
+  font-style: normal;
 }
 
 .reviews__description {
   font-size: 14px;
   line-height: 2.14;
+  text-align: center;
+  margin: 0;
+  padding-top: 35px;
+}
+
+.reviews__item {
+  margin: 0;
+  width: 280px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .reviews__toggles {
   text-align: center;
+  padding-bottom: 70px;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 109px;
 }

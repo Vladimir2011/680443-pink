@@ -3,9 +3,25 @@
   margin: 0 auto;
 }
 
+.copyright__wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  align-items: center;
+  padding-left: 90px;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
+.copyright__link {
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet) {
