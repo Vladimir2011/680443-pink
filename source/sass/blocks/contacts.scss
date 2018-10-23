@@ -4,21 +4,59 @@
 
 .contacts__slogan {
   font-size: 24px;
-  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 44px;
+  padding-bottom: 20px;
 }
 
 .contacts__title {
   font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2px;
 }
 
 .contacts__description {
   font-size: 24px;
   color: #de6183;
+  margin: 0;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts__data {
   text-decoration: none;
   color: #de6183;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+.contacts__item {
+  padding-bottom: 30px;
+
+  &:last-child {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $tablet) {

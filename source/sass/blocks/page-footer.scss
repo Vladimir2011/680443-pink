@@ -2,6 +2,20 @@
   background-color: #ffffff;
 }
 
+.page-footer__not-mobile {
+  display: none;
+}
+
+.page-footer__logo-wrapper {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__logo-wrapper--form {
+  padding-top: 62px;
+}
+
 @media (min-width: $tablet) {
   .page-footer__logo {
     width: 150px;

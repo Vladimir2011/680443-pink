@@ -1,15 +1,37 @@
+.field {
+  padding-bottom: 22px;
+}
+
 .field__name {
   font-size: 14px;
-  line-height: 2.1;
+  line-height: 2;
   color: #d22856;
+  padding-left: 22px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .field__input {
   height: 60px;
-  width: 280px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  margin-top: 7px;
+  padding-left: 21px;
+
+  &:hover {
+    border: 1px solid #000000;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid #d22856;
+  }
 }
 
 .field__input--area {
   height: 200px;
   width: 280px;
+  padding-top: 11px;
+  line-height: 1.8;
 }
