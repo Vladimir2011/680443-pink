@@ -1,10 +1,17 @@
 .service {
   background-color: #f2f2f2;
-  padding-top: 65px;
+
+  &::before {
+    display: block;
+    content: "";
+    background: linear-gradient(to right bottom, white 0%, white 25%, white 50%, #f2f2f2 50%);
+    height: 70px;
+  }
 }
 
 .service__wrapper {
   @include container;
+  padding-top: 25px;
 }
 
 .service__plan {
@@ -36,7 +43,7 @@
   &::before {
     content: "ХИТ";
 
-    bottom: 70px;
+    bottom: 55px;
     right: 245px;
     left: 10px;
 
@@ -48,16 +55,12 @@
     transform: rotate(-45deg);
   }
 }
+
 .service__item {
   list-style: none;
   padding: 0;
-
-  &:first-child{
-    display: none;
-  }
-  &:last-child {
-    display: none;
-  }
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
 .service__list {
@@ -73,7 +76,6 @@
   text-align: center;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 15px;
 }
 
 .service__price {
@@ -90,16 +92,21 @@
   font-size: 14px;
   line-height: 2.14;
   text-transform: uppercase;
-  padding-left: 24px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-left: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 24px;
   margin: 0;
 
   border: 1px solid #e5e5e5;
   background-color: #fff;
 
   &:first-child {
-    border-top: none;
+    border-top: 0px;
+  }
+
+  &:last-child {
+    border-bottom: 2px solid #e5e5e5;
   }
 }
 
@@ -110,7 +117,7 @@
     content: "";
 
     position: absolute;
-    top: 30px;
+    top: 24px;
     left: 230px;
 
     width: 54px;
@@ -129,8 +136,8 @@
     content: "";
 
     position: absolute;
-    top: 25px;
-    left: 230px;
+    top: 15px;
+    left: 231px;
 
     width: 54px;
     height: 32px;
@@ -144,10 +151,10 @@
 .service__toggles {
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 46px;
   margin: 0;
-  width: 60px;
+  width: 65px;
   display: flex;
   justify-content: space-between;
   margin-left: 109px;

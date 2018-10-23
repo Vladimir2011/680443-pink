@@ -1,20 +1,38 @@
 .item-photo__center {
   @include container;
-  background-color: #f2f2f2;
 }
 
-.item-photo {
-  background-color: #f2f2f2;
-  margin-top: 20px;
+.item-photo__image {
+  display: block;
+}
+
+.item-photo--day {
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+
+    bottom: 291px;
+    left: 160px;
+    background-color: #d22856;
+    padding: 12px 22px;
+
+    font-size: 12px;
+    position: absolute;
+    color: white;
+    text-align: center;
+  }
 }
 
 .item-photo__image--day {
   width: 100%;
-  height: 140px;
+  height: 138px;
 }
 
 .item-photo__description-wrapper {
-  padding-left: 18px;
+  padding: 19px 18px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .item-photo__title {
@@ -22,8 +40,6 @@
   line-height: 1.7;
   font-weight: bold;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 10px;
 }
 
 .item-photo__time {
@@ -34,38 +50,24 @@
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .item-photo__like {
   font-size: 12px;
   line-height: 2;
   color: #db738a;
+  text-transform: uppercase;
+  padding-left: 20px;
   margin: 0;
-  padding-bottom: 25px;
 }
 
 .item-photo__like-wrapper {
-  position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  width: 130px;
 }
 
-.item-photo__like-icon {
-  position: absolute;
-
-  content: "";
-
-  left: 0;
-  top: 5px;
-
-  width: 13px;
-  height: 13px;
-
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-
+.item-photo__time {
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 12px;
 }

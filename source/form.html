@@ -9,114 +9,124 @@
   </head>
   <body>
     <header class="page-header">
-        <div class="page-header__image-wrapper-other">
-          <div class="page-header__logo-wrapper">
-            <div class="page-header__logo-center">
-              <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Приложение «Пинк»">
-              </a>
-            </div>
-            <nav class="main-nav main-nav--closed">
-              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a href="index.html">Главная</a></li>
-                <li class="site-list__item site-list__item--active"><a href="photo.html">Фотографии</a></li>
-                <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-                <li class="site-list__item"><a href="#">HTML Academy</a></li>
-              </ul>
-            </nav>
-          </div>
-          <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-header__logo-wrapper page-header__logo-wrapper--open">
+        <div class="page-header__logo-center">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="80" height="25" alt="Приложение «Пинк»">
+          </a>
         </div>
-      </header>
+        <nav class="main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__image-wrapper-other">
+        <h1 class="page-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </header>
 
     <main class="page-main">
       <p class="page-main__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__set name">
-          <label class="field form__field">
-            <span class="field__name">Фамилия:</span>
-            <input class="field__input" type="text" placeholder="Укажите фамилию *" name="lastname" required>
-          </label>
-          <label class="field form__field">
-            <span class="field__name">Имя:</span>
-            <input class="field__input" type="text" placeholder="Введите ваше имя *" name="firstname" required>
-          </label>
-          <label class="field form__field">
-            <span class="field__name">Отчество:</span>
-            <input class="field__input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
-          </label>
-        </fieldset>
-
-        <fieldset class="form__set achievement form__set--background">
-          <legend class="form__set-title">Ваши безбашенные достижения в путешествии</legend>
-
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="selfie">
-            <span class="checkbox__name">Сделал селфи с акулой</span>
-          </label>
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="beach">
-            <span class="checkbox__name">Обгорел на пляже</span>
-          </label>
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="norris">
-            <span class="checkbox__name">Видел Чака Норриса</span>
-          </label>
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="souvenirs">
-            <span class="checkbox__name">Накупил сувениров</span>
-          </label>
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="tower">
-            <span class="checkbox__name">Удержал башню</span>
-          </label>
-          <label class="checkbox form__field">
-            <input class="checkbox__input" type="checkbox" name="achievements[]" value="hotel">
-            <span class="checkbox__name">Разгромил отель</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="form__set number">
-          <label class="field form__field">
-            <span class="field__name">Номер телефона</span>
-            <input class="field__input" type="tel" placeholder="Номер, пожалуйста" name="phone">
-          </label>
-          <label class="field form__field">
-            <span class="field__name">Адрес почты</span>
-            <input class="field__input" type="email" placeholder="Введите почту *" name="email" required>
-          </label>
-        </fieldset>
-
-        <fieldset class="form__set apps form__set--background">
-          <legend class="form__set-title">С каким приложением путешествовали?</legend>
-
-          <label class="radio form__field">
-            <input class="radio__input" type="radio" name="app" value="ios">
-            <span class="radio__name">Pink для iOS</span>
-          </label>
-          <label class="radio form__field">
-            <input class="radio__input" type="radio" name="app" value="android">
-            <span class="radio__name">Pink на Android</span>
-          </label>
-          <label class="radio form__field">
-            <input class="radio__input" type="radio" name="app" value="winphone">
-            <span class="radio__name">Windows Phone</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="form__set">
-          <legend class="form__set-title"><label for="comment">Опишите свои эмоции</label></legend>
-
-          <div class="field form__field">
-            <textarea
-              class="field__input field__input--area"
-              id="comment"
-              placeholder="Можно прям в красках, не стесняясь в выражениях"
-              name="comment"
-            ></textarea>
+        <div class="form__set">
+          <div class="form__set-center">
+            <label class="field form__field">
+              <span class="field__name">Фамилия:</span>
+              <input class="field__input" type="text" placeholder="Укажите фамилию *" name="lastname" required>
+            </label>
+            <label class="field form__field">
+              <span class="field__name">Имя:</span>
+              <input class="field__input" type="text" placeholder="Введите ваше имя *" name="firstname" required>
+            </label>
+            <label class="field form__field">
+              <span class="field__name">Отчество:</span>
+              <input class="field__input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
+            </label>
           </div>
-        </fieldset>
+        </div>
+
+        <div class="form__set form__set--background">
+          <div class="form__set-center">
+            <p class="form__set-title">Ваши безбашенные достижения в путешествии</p>
+
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="selfie" checked>
+              <span class="checkbox__name">Сделал селфи с акулой</span>
+            </label>
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="beach" checked>
+              <span class="checkbox__name">Обгорел на пляже</span>
+            </label>
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="norris">
+              <span class="checkbox__name">Видел Чака Норриса</span>
+            </label>
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="souvenirs">
+              <span class="checkbox__name">Накупил сувениров</span>
+            </label>
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="tower" checked>
+              <span class="checkbox__name">Удержал башню</span>
+            </label>
+            <label class="checkbox form__field">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="achievements[]" value="hotel">
+              <span class="checkbox__name">Разгромил отель</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form__set">
+          <div class="form__set-center">
+            <label class="field form__field">
+              <span class="field__name">Номер телефона</span>
+              <input class="field__input" type="tel" placeholder="Номер, пожалуйста" name="phone">
+            </label>
+            <label class="field form__field">
+              <span class="field__name">Адрес почты</span>
+              <input class="field__input" type="email" placeholder="Введите почту *" name="email" required>
+            </label>
+          </div>
+        </div>
+
+        <div class="form__set form__set--background">
+          <div class="form__set-center">
+            <p class="form__set-title">С каким приложением путешествовали?</p>
+
+            <label class="radio form__field">
+              <input class="radio__input visually-hidden" type="radio" name="app" value="ios" checked>
+              <span class="radio__name">Pink для iOS</span>
+            </label>
+            <label class="radio form__field">
+              <input class="radio__input visually-hidden" type="radio" name="app" value="android">
+              <span class="radio__name">Pink на Android</span>
+            </label>
+            <label class="radio form__field">
+              <input class="radio__input visually-hidden" type="radio" name="app" value="winphone">
+              <span class="radio__name">Windows Phone</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form__set">
+          <div class="form__set-center">
+            <p class="form__set-title form__set-title--comment"><label for="comment">Опишите свои эмоции</label></p>
+
+            <div class="field form__field">
+              <textarea
+                class="field__input field__input--area"
+                id="comment"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"
+                name="comment"
+              ></textarea>
+            </div>
+          </div>
+        </div>
 
         <div class="form__wrapper">
           <button class="button form__submit" type="submit">Отправить форму</button>
@@ -128,7 +138,7 @@
     <footer class="page-footer">
       <div class="page-footer__center">
         <div class="page-footer__wrapper">
-          <div class="page-footer__logo-wrapper">
+          <div class="page-footer__logo-wrapper page-footer__logo-wrapper--form">
             <a class="page-footer__logo">
               <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="140" height="45" alt="Приложение «Пинк»">
             </a>
@@ -181,7 +191,7 @@
       </div>
     </footer>
 
-    <div class="pop-up">
+    <div class="pop-up pop-up-position--accept">
       <p class="pop-up__header"><b>Ваша заявка отправлена</b></p>
       <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
             оповестим вас.</p>
@@ -190,7 +200,7 @@
       </div>
     </div>
 
-    <div class="pop-up">
+    <div class="pop-up pop-up-position--error">
       <p class="pop-up__header"><b>Что-то пошло не так!</b></p>
       <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="pop-up__button-wrapper-error">

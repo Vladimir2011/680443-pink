@@ -82,3 +82,19 @@
     border-radius: 50%;
   }
 }
+
+.slider-service {
+  overflow: hidden;
+}
+
+.slider__list-service {
+  display: flex;
+}
+
+.slider__item-service {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  transition: transform 0.2s ease;
+  transform: translateX(-100%);
+}

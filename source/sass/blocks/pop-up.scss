@@ -1,10 +1,24 @@
 .pop-up {
+  position: fixed;
   width: 320px;
   margin: 0 auto;
 
+  background-color: #fff;
   box-shadow: 7px 0px 15px rgba(0, 0, 0, 0.7);
-  // Временно, чтобы их отделить друг от друга для просмотра теней.
-  margin-bottom: 50px;
+}
+
+.pop-up-position--accept {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.pop-up-position--error {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
 }
 
 .pop-up__header {

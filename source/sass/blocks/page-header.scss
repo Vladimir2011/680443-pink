@@ -1,64 +1,65 @@
-.page-header__wrapper {
-  position: relative;
-  height: 735px;
-
-  &::after {
-    content: url(../img/iphone-hand-mobile@1x.png);
-    position: absolute;
-    z-index: 2;
-
-    top: 175px;
-    background-repeat: no-repeat;
-  }
-}
-
 .page-header__image-wrapper {
   position: relative;
   width: 100%;
+  margin-top: -66px;
 
   z-index: 1;
-  height: 460px;
   background-image: url("../img/bg-back-mobile.jpg");
+  padding-top: 454px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
+  background-size: cover;
 }
 
 .page-header__image-wrapper-other {
   position: relative;
   width: 100%;
+  margin-top: -66px;
 
-  z-index: 1;
-  height: 240px;
+  z-index: -1;
+  padding-top: 93px;
   background-image: url("../img/bg-back-mobile.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-size: cover;
+  max-height: 240px; // Под большим сомнением, другого выхода не нашел. Заголовок на странице с формой,
+  // имеет еще доп строку, тем самым увеличивая размер картинки (бекграунда).
+
 }
 
 .page-header__logo-wrapper {
-  height: 66px;
+  position: relative;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo-wrapper--open {
-  height: 66px;
   background-color: #283645;
-  border-bottom: 1px solid black;
 }
 
 .page-header__logo {
   height: 25px;
 }
 
-.page-header__logo-image {
-  padding-top: 22px;
-}
-
 .page-header__logo-center {
   @include container;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .page-header__platform {
-  margin-top: 393px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    position: absolute;
+    left: calc(50% - 160px);
+    bottom: 100%;
+    width: 258px;
+    height: 286px;
+  }
 }
 
 // photo.html
@@ -69,8 +70,8 @@
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
-  padding-top: 30px;
   font-weight: normal;
+  padding-bottom: 83px;
 }
 
 @media (min-width: $tablet) {
