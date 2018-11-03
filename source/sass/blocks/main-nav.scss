@@ -77,3 +77,39 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet) {
+  .main-nav {
+    width: 660px;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+    left: 0;
+
+    &::before,
+    &::after {
+
+      top: 54px;
+      left: 614px;
+    }
+  }
+
+  .main-nav__toggle {
+    top: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    background-color: transparent;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

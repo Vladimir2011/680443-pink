@@ -27,15 +27,44 @@
   }
 }
 
+.site-list__item--active .active {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: $tablet) {
+  .site-list a {
+    padding: 13px 21px;
+  }
+}
+
 
 
 @media (min-width: $desktop) {
   .site-list {
-    width: 790px;
+    width: 670px;
+    display: flex;
+    padding-top: 45px;
+  }
+
+  .site-list a {
+    display: block;
+    padding: 0;
+
+
+    line-height: 1;
+    color: #ffffff;
+    text-transform: none;
+    font-weight: normal;
+
+    background-color: transparent;
+    border: none;
   }
 
   .site-list__item {
-    //
-    width: 150px;
+    padding-left: 81px;
+
+    &:first-child {
+      padding-left: 37px;
+    }
   }
 }

@@ -37,21 +37,22 @@
 @media (min-width: $tablet) {
   .social {
     width: 320px;
-  }
-
-  .social__list {
-    display: flex;
-    justify-content: space-between;
+    padding-left: 7px;
   }
 }
 
 @media (min-width: $desktop) {
   .social {
     width: 640px;
+    padding-left: 0;
   }
 
   .social__list {
     display: flex;
     justify-content: space-between;
+    padding-left: 235px;
+    padding-right: 220px;
+    width: auto;
+    margin-left: 0;
   }
 }

@@ -1,5 +1,5 @@
-.field {
-  padding-bottom: 22px;
+.field__input-icon {
+  display: none;
 }
 
 .field__name {
@@ -34,4 +34,62 @@
   width: 280px;
   padding-top: 11px;
   line-height: 1.8;
+}
+
+@media (min-width: $tablet) {
+
+  .field__name {
+    padding-right: 17px;
+    padding-left: 0;
+  }
+
+  .field__input-wrapper {
+    order: 1;
+    display: flex;
+  }
+
+  .field__name--contact {
+    order: 2;
+    padding-left: 16px;
+    padding-top: 12px;
+  }
+
+  .field__input--contact {
+    width: 440px;
+  }
+
+  .field__input--area {
+    height: 190px;
+    width: 500px;
+    padding-top: 11px;
+    line-height: 1.8;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .field__input-icon {
+    display: block;
+    background-color: #e5e5e5;
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .field__input {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .field__input--contact {
+    width: 312px;
+  }
+
+  .field__input--area {
+    width: 820px;
+    height: 125px;
+  }
 }

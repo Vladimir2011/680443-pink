@@ -100,3 +100,21 @@
   transition: transform 0.2s ease;
   transform: translateX(-100%);
 }
+
+@media (min-width: $tablet) {
+  .slider__item-service {
+    flex-shrink: 1;
+    text-align: start;
+    transition: 0;
+    transform: none;
+  }
+
+  .slider__list-service {
+    display: block;
+    flex: none;
+  }
+
+  .slider-service {
+    overflow: auto;
+  }
+}
