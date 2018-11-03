@@ -12,6 +12,15 @@
 }
 
 @media (min-width: $tablet) {
+  .shared-photos__header {
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 90px;
+    padding-left: 51px;
+    padding-right: 51px;
+    padding-bottom: 77px;
+  }
+
   .shared-photos__wrapper .item-photo:first-child {
     width: 300px;
   }
@@ -43,5 +52,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .shared-photos__header {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 90px;
   }
 }

@@ -11,14 +11,76 @@
   .research__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 58px;
   }
 
   .research__image {
     width: 300px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+
+      top: 55px;
+      left: 18px;
+      bottom: 0;
+      width: 205px;
+      height: 205px;
+      background-color: #d22856;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      z-index: 3;
+      color: #d22856;
+      font-size: 96px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 30px;
+      top: 69px;
+      left: 31px;
+      bottom: 0;
+      width: 177px;
+      height: 177px;
+      background: #ffffff;
+      border-radius: 50%;
+    }
   }
 
   .research__description {
     width: 310px;
+    padding-top: 40px;
+  }
+
+  .research__header {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0;
+    padding-right: 101px;
+    padding-bottom: 10px;
+  }
+
+  .research__paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  .research__link {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .research__image-size {
+    width: 240px;
+    height: 280px;
   }
 }
 
@@ -26,12 +88,19 @@
   .research {
     display: block;
     background-color: #f2f2f2;
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 
   .research__wrapper {
-    @include container;
+    width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .research__image {
@@ -40,6 +109,52 @@
 
   .research__description {
     width: 560px;
+    padding-top: 90px;
+  }
+
+  .research__image-size {
+    width: 300px;
+    height: 350px;
+  }
+
+  .research__image {
+    width: 300px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      top: 68px;
+      left: 22px;
+      width: 255px;
+      height: 255px;
+    }
+
+    &::after {
+      top: 91px;
+      left: 46px;
+      width: 205px;
+      height: 205px;
+
+      font-size: 120px;
+    }
+  }
+
+  .research__paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 33px;
+  }
+
+  .research__header {
+    line-height: 1;
+    padding-bottom: 25px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d22856;
   }
 }
 

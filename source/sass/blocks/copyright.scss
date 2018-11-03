@@ -28,10 +28,22 @@
   .copyright {
     width: 150px;
   }
+
+  .copyright__link {
+    padding-right: 10px;
+  }
+
+  .copyright__wrapper {
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop) {
   .copyright {
     width: 160px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
   }
 }

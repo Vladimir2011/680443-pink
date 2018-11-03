@@ -19,11 +19,7 @@
   width: 280px;
   padding: 11px 0;
 
-  font-size: 18px;
-  line-height: 1;
   color: #ffffff;
-  text-align: center;
-  text-decoration: none;
 
   background-color: transparent;
   border-radius: 30px;
@@ -72,25 +68,76 @@
 @media (min-width: $tablet) {
   .platform {
     background-color: transparent;
-    // временно
-    width: 320px;
-    margin-right: 320px;
+    @include container;
+  }
+
+  .platform__wrapper {
+    width: 50%;
+    margin-left: 0;
+    padding: 59px 0;
   }
 
   .platform__header {
+    margin: 0;
     display: block;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 23px;
+    padding-right: 30px;
+  }
+
+  .platform__download-wrapper {
+    padding-bottom: 45px;
+  }
+
+  .platform__download {
+    width: 300px;
+  }
+
+  .platform__list {
+    margin-left: 45px;
+    padding-bottom: 30px;
+  }
+
+  .platform__paragraph {
+    font-size: 18px;
   }
 }
 
 @media (min-width: $desktop) {
   .platform {
     background-color: transparent;
-    // временно
-    width: 370px;
-    margin-right: 580px;
   }
 
   .platform__paragraph {
     display: block;
+    width: 70%;
+    padding-right: 16px;
   }
+
+  .platform__header {
+    font-size: 50px;
+    padding-top: 52px;
+    padding-left: 30px;
+    padding-right: 203px;
+    padding-bottom: 20px;
+  }
+
+  .platform-wrapper {
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  .platform__download-wrapper {
+    padding-bottom: 64px;
+  }
+
+  .platform__list {
+    padding-bottom: 50px;
+  }
+
+  .platform__download {
+    font-size: 21px;
+  }
+
 }

@@ -49,3 +49,14 @@
   border-radius: 50%;
   background-color: #d22856;
 }
+
+@media (min-width: $tablet) {
+  
+  .radio {
+    padding-left: 59px;
+  }
+
+  .radio__name {
+    padding-left: 60px;
+  }
+}

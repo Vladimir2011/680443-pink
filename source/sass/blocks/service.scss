@@ -14,6 +14,10 @@
   padding-top: 25px;
 }
 
+.service__item--mobile {
+  display: none;
+}
+
 .service__plan {
   background-color: #283645;
 
@@ -29,7 +33,7 @@
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -4px;
 
     width: 70px;
     height: 70px;
@@ -117,13 +121,13 @@
     content: "";
 
     position: absolute;
-    top: 24px;
-    left: 230px;
+    top: 20px;
+    left: 232px;
 
-    width: 54px;
-    height: 32px;
+    width: 34px;
+    height: 24px;
 
-    background-image: url("../img/icon-yes.svg");
+    background-image: url("../img/yes.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -137,7 +141,7 @@
 
     position: absolute;
     top: 15px;
-    left: 231px;
+    left: 233px;
 
     width: 54px;
     height: 32px;
@@ -161,25 +165,111 @@
 }
 
 @media (min-width: $tablet) {
-
-  .service__list {
-    width: 470px;
-    display: flex;
+  .service__wrapper {
+    padding-top: 2px;
+    padding-bottom: 40px;
   }
 
-  .service__toogles {
+  .service__list {
+    display: flex;
+    width: 620px;
+    align-items: flex-end;
+  }
+
+  .service__item {
+    width: 156px;
+    display: block;
+    border: none;
+  }
+
+  .service__toggles {
     display: none;
+  }
+
+  .service__advantage {
+    height: 50px;
+    text-transform: none;
+    padding-left: 11px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    margin: 0;
+
+    &:first-child {
+      border-top: 2px solid #e5e5e5;
+    }
+  }
+
+  .service__advantage-text {
+    @include visually-hidden;
+  }
+
+  .service__advantage--uncheck::after {
+    left: 40%;
+    top: 20%;
+  }
+
+  .service__advantage--check::after {
+    left: 40%;
+    top: 20%;
+  }
+
+  .service__type {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 17px;
+    padding-bottom: 0;
+  }
+
+  .service__price {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+  .service__plan:nth-child(2n) {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  .service__plan--hit::after {
+    background-image: url("../img/bg-hit-tablet.svg");
+    left: 0;
+  }
+
+  .service__plan--hit::before {
+    bottom: 37px;
   }
 }
 
 @media (min-width: $desktop) {
 
   .service__list {
-    width: 710px;
+    width: auto;
     display: flex;
   }
 
   .service__toggles {
     display: none;
+  }
+
+  .service__item {
+    width: 240px;
+  }
+
+  .service__price {
+    padding-bottom: 24px;
+  }
+
+  .service__plan--hit::before {
+    bottom: 42px;
+  }
+
+  .service__advantage {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+  .service__wrapper {
+    padding-top: 40px;
+    padding-bottom: 95px;
   }
 }
