@@ -50,3 +50,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+@media (min-width: $tablet) {
+
+  .checkbox__name {
+    padding-left: 60px;
+  }
+}

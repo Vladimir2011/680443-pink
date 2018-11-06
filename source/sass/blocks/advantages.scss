@@ -58,35 +58,136 @@
   text-align: center;
 }
 
+.advantages__image-size {
+  width: 155px;
+  height: 275px;
+}
+
+.advantages__image-item {
+  display: none;
+}
+
 @media (min-width: $tablet) {
-  .advantages__wrapper {
+  .advantages__wrapper-center {
+    @include container;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-bottom: 4px;
+    position: relative;
+  }
 
-    background-color: #f2f2f2;
+  .advantages__header {
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 
   .advantages__image {
-    width: 300px;
+    width: 270px;
+
+    position: absolute;
+    content: "";
+    left: 19px;
+    bottom: 0px;
+  }
+
+  .advantages__list {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  .advantages__slogan {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+
+  .advantages__slogan--centre {
+    padding-left: 20px;
+  }
+
+  .advantages__image-size {
+    width: 270px;
+    height: 480px;
+  }
+
+  .advantages__item {
+    text-align: left;
+    padding-top: 40px;
   }
 }
 
 @media (min-width: $desktop) {
-  .advantages {
-    @include container;
-  }
 
   .advantages__wrapper {
-    background-color: #f2f2f2;
+    padding-bottom: 70px;
+
+    &::before {
+      height: 70px;
+    }
   }
 
   .advantages__list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
   }
 
   .advantages__image {
     display: none;
+  }
+
+  .advantages__header {
+    padding-top: 76px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 100%;
+  }
+
+  .advantages__slogan {
+    font-size: 50px;
+  }
+
+  .advantages__item {
+    padding-right: 30px;
+    padding-top: 0;
+    text-align: center;
+
+    &:nth-child(2n) {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 1;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 30px;
+  }
+
+  .advantages__image-item {
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .advantages__image-size-item {
+    width: auto;
+    height: 300px;
   }
 }
