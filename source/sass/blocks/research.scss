@@ -156,5 +156,49 @@
     line-height: 1.6;
     color: #d22856;
   }
-}
 
+  .research__image-size {
+    width: 300px;
+    height: 350px;
+  }
+
+  .research__image {
+    width: 300px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      top: 68px;
+      left: 22px;
+      width: 255px;
+      height: 255px;
+    }
+
+    &::after {
+      top: 91px;
+      left: 46px;
+      width: 205px;
+      height: 205px;
+
+      font-size: 120px;
+    }
+  }
+
+  .research__paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 33px;
+  }
+
+  .research__header {
+    line-height: 1;
+    padding-bottom: 25px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d22856;
+  }
+}
