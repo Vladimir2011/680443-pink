@@ -8,9 +8,15 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 180px;
-  justify-content: space-between;
-  margin-left: 70px;
+  justify-content: center;
+}
+
+.social__item {
+  padding-left: 15px;
+
+  &:first-child {
+    padding-left: 0;
+  }
 }
 
 .social__link {

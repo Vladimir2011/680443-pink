@@ -24,7 +24,7 @@
   z-index: -1;
   padding-top: 93px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 240px; // Под большим сомнением, другого выхода не нашел. Заголовок на странице с формой,
@@ -68,6 +68,13 @@
     bottom: 100%;
     width: 258px;
     height: 286px;
+
+    background-size: 258px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      height: 286px;
+    }
   }
 }
 
@@ -81,6 +88,31 @@
   text-align: center;
   font-weight: normal;
   padding-bottom: 83px;
+}
+
+.page-header__header-wrapper-center {
+  @include container;
+}
+
+.page-header__logo-image-container svg {
+  fill: #ffffff;
+}
+
+.page-header__logo-image-container svg:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-image-container svg:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.page-header__logo-image-container--tablet {
+  display: none;
+}
+
+.page-header__logo-image-container--desktop {
+  display: none;
 }
 
 @media (min-width: $tablet) {
@@ -97,6 +129,14 @@
     }
   }
 
+  .page-header__logo-image-container--tablet {
+    display: block;
+  }
+
+  .page-header__logo-image-container--mobile {
+    display: none;
+  }
+
   .page-header__platform {
     min-height: 618px;
   }
@@ -106,8 +146,15 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
     left: calc(50% - 350px);
     bottom: 0;
-    width: 661px;
-    height: 544px;
+    width: 660px;
+    height: 545px;
+
+    background-size: 700px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      height: 545px;
+    }
   }
 
   .page-header__logo-center {
@@ -190,8 +237,15 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     left: calc(50% - 454px);
     bottom: -25px;
-    width: 890px;
+    width: 925px;
     height: 645px;
+
+    background-size: 1050px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      height: 645px;
+    }
   }
 
   .page-header__header {
@@ -203,5 +257,13 @@
   .page-header__header--form {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .page-header__logo-image-container--tablet {
+    display: none;
+  }
+
+  .page-header__logo-image-container--desktop {
+    display: block;
   }
 }

@@ -46,7 +46,7 @@
 }
 
 .form__set-title--comment {
-  padding-bottom: 9px;
+  padding-bottom: 15px;
 }
 
 .form__set--background {
@@ -275,14 +275,11 @@
     background-color: #ffffff;
   }
 
-  .achievement {
-    order: -1;
-  }
-
   .form__wrapper {
     width: 940px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
   }
 
   .form__set {
@@ -324,9 +321,13 @@
     padding-bottom: 20px;
   }
 
+  .form__field--email {
+    padding-left: 135px;
+  }
+
   .form__set:nth-child(3) {
     padding-top: 46px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .form__set:nth-child(5) {
@@ -335,12 +336,12 @@
   }
 
   .form__set-center--contact {
+    padding-top: 35px;
     width: 940px;
   }
 
   .form__set__wrapper-desktop {
     display: flex;
-    justify-content: space-between;
     width: 820px;
   }
 

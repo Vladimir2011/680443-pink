@@ -4,14 +4,15 @@
   &::before {
     display: block;
     content: "";
-    background: linear-gradient(to right bottom, white 0%, white 25%, white 50%, #f2f2f2 50%);
-    height: 70px;
+    background: linear-gradient(to right bottom, white 50%, #f2f2f2 53%);
+    height: 40px;
   }
 }
 
 .service__wrapper {
-  @include container;
-  padding-top: 25px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 35px;
 }
 
 .service__item--mobile {
@@ -48,8 +49,7 @@
     content: "ХИТ";
 
     bottom: 55px;
-    right: 245px;
-    left: 10px;
+    left: 6px;
 
     font-size: 14px;
     line-height: 2;
@@ -122,7 +122,7 @@
 
     position: absolute;
     top: 20px;
-    left: 232px;
+    right: 15px;
 
     width: 34px;
     height: 24px;
@@ -141,7 +141,7 @@
 
     position: absolute;
     top: 15px;
-    left: 233px;
+    right: -8px;
 
     width: 54px;
     height: 32px;
@@ -155,25 +155,26 @@
 .service__toggles {
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 15px;
   padding-bottom: 46px;
   margin: 0;
-  width: 65px;
   display: flex;
-  justify-content: space-between;
-  margin-left: 109px;
+  justify-content: center;
 }
 
 @media (min-width: $tablet) {
   .service__wrapper {
-    padding-top: 2px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 63px;
+    width: 660px;
   }
 
   .service__list {
     display: flex;
     width: 620px;
     align-items: flex-end;
+    margin: 0;
+    padding-top: 40px;
   }
 
   .service__item {
@@ -236,7 +237,9 @@
   }
 
   .service__plan--hit::before {
-    bottom: 37px;
+    left: 8px;
+    top: 9px;
+    bottom: 34px;
   }
 }
 
@@ -257,19 +260,34 @@
 
   .service__price {
     padding-bottom: 24px;
+    font-size: 24px;
   }
 
   .service__plan--hit::before {
-    bottom: 42px;
+    bottom: 50px;
   }
 
   .service__advantage {
     font-size: 18px;
     padding-left: 20px;
+    height: 60px;
   }
 
   .service__wrapper {
-    padding-top: 40px;
+    padding-top: 45px;
     padding-bottom: 95px;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .service__advantage--check::after {
+    left: 43%;
+    top: 35%;
+  }
+
+  .service__advantage--uncheck::after {
+    left: 44%;
+    top: 28%;
   }
 }

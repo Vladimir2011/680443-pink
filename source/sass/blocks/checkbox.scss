@@ -10,7 +10,7 @@
   user-select: none;
 }
 
-.checkbox {
+.checkbox--desktop {
   padding-bottom: 54px;
 }
 
@@ -51,9 +51,38 @@
   background-position: 0 0;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
 
   .checkbox__name {
     padding-left: 60px;
+  }
+
+  .checkbox--desktop {
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(n+1) {
+      width: 310px;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+      width: 290px;
+    }
+
+    &:nth-child(3) {
+      width: 290px;
+    }
+
+    &:last-child {
+      order: 6;
+      width: 215px;
+    }
+
+    &:nth-child(5) {
+      width:215px;
+    }
   }
 }

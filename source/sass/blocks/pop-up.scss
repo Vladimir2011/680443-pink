@@ -3,7 +3,10 @@
   width: 320px;
   margin: 0 auto;
 
+  left: 50%;
+  right: 50%;
   z-index: 2;
+  display: none;
   background-color: #fff;
   box-shadow: 7px 0px 15px rgba(0, 0, 0, 0.7);
 }
@@ -12,14 +15,12 @@
   top: 0;
   left: 0;
   right: 0;
-  display: none;
 }
 
 .pop-up-position--error {
   top: 0;
   left: 0;
   right: 0;
-  display: none;
 }
 
 .pop-up__header {
@@ -81,6 +82,14 @@
   padding-right: 20px;
 }
 
+.popup-ok__show {
+  display: block;
+}
+
+.popup-error__show {
+  display: block;
+}
+
 @media (min-width: $tablet) {
   .pop-up {
     width: 470px;
@@ -118,7 +127,7 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .pop-up {
     width: 780px;
   }

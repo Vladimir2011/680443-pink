@@ -22,7 +22,22 @@
 
 .copyright__link {
   padding-left: 13px;
+
+  & svg {
+    fill :#d22856;
+  }
+
+  & svg:hover {
+    fill: #000000;
+  }
+
+  & svg:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
 }
+
+
 
 @media (min-width: $tablet) {
   .copyright {

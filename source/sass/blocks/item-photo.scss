@@ -12,8 +12,8 @@
   &::before {
     content: "ПАНОРАМА ДНЯ";
 
-    bottom: 291px;
-    left: 160px;
+    bottom: auto;
+    left: calc(50% + 10px);
     background-color: #d22856;
     padding: 12px 22px;
 
@@ -26,7 +26,6 @@
 
 .item-photo__image--day {
   width: 100%;
-  height: 138px;
 }
 
 .item-photo__description-wrapper {
@@ -73,6 +72,7 @@
 }
 
 @media (min-width: $tablet) {
+
   .item-photo__image--day {
     height: 510px;
   }
@@ -129,7 +129,7 @@
   }
 
   .item-photo--day .item-photo__description-wrapper {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .item-photo--day .item-photo__like-wrapper {

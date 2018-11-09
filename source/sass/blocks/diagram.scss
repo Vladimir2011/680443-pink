@@ -1,0 +1,158 @@
+.diagram {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .diagram {
+    display: flex;
+    min-height: 319px;
+  }
+}
+
+.diagram__container {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 92px;
+}
+
+.diagram__background {
+  position: relative;
+  width: 281px;
+  height: 319px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: -36px;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 79%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 13px solid #d22856;
+  }
+}
+
+
+.diagram__background-title {
+  position: absolute;
+  top: 38px;
+  left: 85px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 150px;
+  color: #d22856;
+}
+
+.diagram__slogan {
+  width: 330px;
+  margin-left: 47px;
+}
+
+.diagram__slogan-title {
+  max-width: 165px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+
+  color: #000000;
+}
+
+.diagram__slogan-deskr {
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.diagram__slogan-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: underline;
+
+  color: #d22856;
+}
+
+@media (min-width: $desktop) {
+  .diagram {
+    padding-top: 65px;
+    background-color: #f2f2f2;
+  }
+
+  .diagram__background {
+    &::before {
+      top: -91px;
+      left: -38px;
+      background-size: 100%;
+    }
+
+    &::after {
+      top: -22px;
+      left: -17px;
+      width: 255px;
+      height: 255px;
+      border: 18px solid #d22856;
+    }
+  }
+
+  .diagram__background-title {
+    top: 5px;
+    left: 41px;
+    font-size: 120px;
+    line-height: 187px;
+  }
+
+  .diagram__header {
+    margin-bottom: 232px;
+    padding-top: 61px;
+  }
+
+  .diagram__slogan {
+    width: 531px;
+    margin-left: 47px;
+  }
+
+  .diagram__slogan-title {
+    max-width: 315px;
+    margin-bottom: 21px;
+  }
+
+  .diagram__slogan-deskr {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .diagram__slogan-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

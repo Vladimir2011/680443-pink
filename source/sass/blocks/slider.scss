@@ -1,89 +1,43 @@
 .slider__toggle {
   position: relative;
 
-  width: 12px;
-  height: 12px;
-
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  background: #ffffff;
+  background-color: transparent;
+  padding: 11px;
+  padding-right: 15px;
 
   &::after {
     content: "";
-
     position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-
     width: 6px;
     height: 6px;
-
-    background: rgba(126, 134, 143, 0.3);
     border-radius: 50%;
+    z-index: 1;
+    background-color: #b5b9be;
+    opacity: 0.3;
   }
 }
 
-.slider__toggle::after:hover {
-  background: rgba(126, 134, 143, 1);
+.slider__toggle:hover::after {
+  opacity: 1;
 }
 
-.slider__toggle-service {
-  position: relative;
-
-  width: 12px;
-  height: 12px;
-
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  background: #f2f2f2;
-  padding-left: 2px;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 3px;
-    left: 3px;
-
-    z-index: 1;
-    width: 6px;
-    height: 6px;
-
-    background: rgba(126, 134, 143, 0.3);
-    border-radius: 50%;
-  }
+.slider__toggle:active::after {
+  opacity: 0.1;
 }
 
-.slider__toggle--active {
-  position: relative;
-
-  width: 12px;
-  height: 12px;
-
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  background-color: black;
-  padding-left: 2px;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-
-    width: 6px;
-    height: 6px;
-
-    background: #ffffff;
-    border-radius: 50%;
-  }
+.slider__toggle--active::after {
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0 0 0 3px black;
 }
+
+.slider__toggle--active:active::after {
+  opacity: 1;
+}
+
 
 .slider-service {
   overflow: hidden;
@@ -101,6 +55,10 @@
   transform: translateX(-100%);
 }
 
+.slider__arrow-toggle {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .slider__item-service {
     flex-shrink: 1;
@@ -116,5 +74,43 @@
 
   .slider-service {
     overflow: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .slider__list {
+    position: relative;
+  }
+
+  .slider__arrow-toggle {
+    display: block;
+    cursor: pointer;
+    opacity: 0.3;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__arrow-toggle--left {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: -6px;
+  }
+
+  .slider__arrow-toggle--right {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: 910px;
   }
 }

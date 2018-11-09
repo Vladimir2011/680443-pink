@@ -2,6 +2,10 @@
   display: none;
 }
 
+.field__input-wrapper {
+  padding-bottom: 20px;
+}
+
 .field__name {
   font-size: 14px;
   line-height: 2;
@@ -30,10 +34,10 @@
 }
 
 .field__input--area {
-  height: 200px;
-  width: 280px;
+  min-height: 200px;
   padding-top: 11px;
   line-height: 1.8;
+  resize: vertical;
 }
 
 @media (min-width: $tablet) {
@@ -46,6 +50,7 @@
   .field__input-wrapper {
     order: 1;
     display: flex;
+    padding-bottom: 0;
   }
 
   .field__name--contact {
@@ -59,12 +64,12 @@
   }
 
   .field__input--area {
-    height: 190px;
-    width: 500px;
+    min-height: 190px;
     padding-top: 11px;
     line-height: 1.8;
     margin-left: 60px;
     margin-right: 60px;
+    width: 500px;
   }
 
   .field__input-icon {
@@ -75,6 +80,15 @@
     margin-top: 7px;
     text-align: center;
     padding-top: 20px;
+    position: absolute;
+  }
+
+  .field__input-icon--email {
+    right: 58px;
+  }
+
+  .field__input-icon--phone {
+    right: 58px;
   }
 
   .field__input {
@@ -90,6 +104,16 @@
 
   .field__input--area {
     width: 820px;
-    height: 125px;
+    min-height: 125px;
+  }
+
+  .field__input-icon--email {
+    top: 35px;
+    left: calc(50% + 349px);
+  }
+
+  .field__input-icon--phone {
+    top: 35px;
+    left: calc(50% - 97px);
   }
 }

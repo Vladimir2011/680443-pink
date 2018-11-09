@@ -1,5 +1,6 @@
 .site-list {
   font-weight: bold;
+  width: 100%;
 }
 
 .site-list a {
@@ -23,12 +24,8 @@
   }
 
   &:active {
-    color:rgba(210, 40, 86, 0.3);
+    color:rgba(166, 45, 84, 0.3);
   }
-}
-
-.site-list__item--active .active {
-  border-bottom: 2px solid white;
 }
 
 @media (min-width: $tablet) {
@@ -36,8 +33,6 @@
     padding: 13px 21px;
   }
 }
-
-
 
 @media (min-width: $desktop) {
   .site-list {
@@ -58,13 +53,21 @@
 
     background-color: transparent;
     border: none;
+
+    &:active {
+      color:rgba(255, 255, 255, 0.3);
+    }
   }
 
   .site-list__item {
     padding-left: 81px;
 
     &:first-child {
-      padding-left: 37px;
+      padding-left: 45px;
     }
+  }
+
+  .site-list__item--active .active {
+    border-bottom: 2px solid white;
   }
 }
