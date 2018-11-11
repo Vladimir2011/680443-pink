@@ -55,7 +55,7 @@
 .item-photo__like {
   font-size: 12px;
   line-height: 2;
-  color: #db738a;
+  color: #d22856;
   text-transform: uppercase;
   padding-left: 20px;
   margin: 0;
@@ -74,7 +74,8 @@
 @media (min-width: $tablet) {
 
   .item-photo__image--day {
-    height: 510px;
+    min-height: 510px;
+    object-fit: cover;
   }
 
   .item-photo--day::before {

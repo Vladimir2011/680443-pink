@@ -60,7 +60,7 @@
   padding-top: 42px;
 }
 
-.form__note--color {
+.form__note-color {
   color: red;
 }
 
@@ -194,7 +194,7 @@
   }
 
   .form__set-center--app {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 67px;
     padding-bottom: 17px;
   }
@@ -226,19 +226,19 @@
   }
 
   .form__set-center--contact {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 44px;
     padding-left: 60px;
   }
 
   .form__set-center--checkbox {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 60px;
     padding-left: 58px;
   }
 
   .form__set-center--comment {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-bottom: 25px;
     padding-top: 47px;
   }
@@ -259,6 +259,12 @@
   .form__field--contact {
     display: flex;
     flex-direction: column;
+  }
+
+  .form__input-wrapper {
+    order: 1;
+    display: flex;
+    padding-bottom: 0;
   }
 }
 
@@ -340,7 +346,7 @@
     width: 940px;
   }
 
-  .form__set__wrapper-desktop {
+  .form__set-wrapper-desktop {
     display: flex;
     width: 820px;
   }

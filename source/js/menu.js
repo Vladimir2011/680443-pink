@@ -3,6 +3,7 @@ var navToggle = document.querySelector(".main-nav__toggle");
 var pageHeaderWrapper = document.querySelector(".page-header__logo-wrapper");
 
 navMain.classList.remove("main-nav--nojs");
+pageHeaderWrapper.classList.remove("page-header__logo-wrapper--nojs");
 
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains("main-nav--closed")) {

@@ -18,18 +18,18 @@
 .field__input {
   height: 60px;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   outline: none;
   margin-top: 7px;
   padding-left: 21px;
 
   &:hover {
-    border: 1px solid #000000;
+    border-color: #000000;
   }
 
   &:focus,
   &:active {
-    border: 1px solid #d22856;
+    border-color: #d22856;
   }
 }
 
@@ -45,12 +45,6 @@
   .field__name {
     padding-right: 17px;
     padding-left: 0;
-  }
-
-  .field__input-wrapper {
-    order: 1;
-    display: flex;
-    padding-bottom: 0;
   }
 
   .field__name--contact {
@@ -109,7 +103,7 @@
 
   .field__input-icon--email {
     top: 35px;
-    left: calc(50% + 349px);
+    left: calc(50% + 350px);
   }
 
   .field__input-icon--phone {
