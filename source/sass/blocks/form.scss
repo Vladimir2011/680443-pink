@@ -259,6 +259,7 @@
   .form__field--contact {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .form__input-wrapper {
@@ -325,10 +326,11 @@
 
   .form__field--contact {
     padding-bottom: 20px;
+    position: relative;
   }
 
   .form__field--email {
-    padding-left: 135px;
+    padding-left: 70px;
   }
 
   .form__set:nth-child(3) {

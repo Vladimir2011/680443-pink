@@ -54,7 +54,7 @@
   }
 
   .field__input--contact {
-    width: 440px;
+    width: 500px;
   }
 
   .field__input--area {
@@ -72,17 +72,11 @@
     width: 60px;
     height: 60px;
     margin-top: 7px;
+    right: 0;
+    top: 0;
     text-align: center;
     padding-top: 20px;
     position: absolute;
-  }
-
-  .field__input-icon--email {
-    right: 58px;
-  }
-
-  .field__input-icon--phone {
-    right: 58px;
   }
 
   .field__input {
@@ -93,21 +87,11 @@
 @media (min-width: $desktop) {
 
   .field__input--contact {
-    width: 312px;
+    width: 372px;
   }
 
   .field__input--area {
     width: 820px;
     min-height: 125px;
-  }
-
-  .field__input-icon--email {
-    top: 35px;
-    left: calc(50% + 350px);
-  }
-
-  .field__input-icon--phone {
-    top: 35px;
-    left: calc(50% - 97px);
   }
 }

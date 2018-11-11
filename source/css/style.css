@@ -326,6 +326,9 @@ img {
 button {
   outline: none; }
 
+svg {
+  overflow: hidden; }
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
@@ -928,8 +931,8 @@ input[type="radio"].visually-hidden {
   .advantages__wrapper::before {
     display: block;
     content: "";
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, white), color-stop(53%, #f2f2f2));
-    background: linear-gradient(to right bottom, white 50%, #f2f2f2 53%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, white), color-stop(50%, #f2f2f2));
+    background: linear-gradient(to right bottom, white 50%, #f2f2f2 50%);
     height: 35px; }
 
 .advantages__header {
@@ -1509,12 +1512,13 @@ input[type="radio"].visually-hidden {
     left: 910px; } }
 
 .service {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  overflow: hidden; }
   .service::before {
     display: block;
     content: "";
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, white), color-stop(53%, #f2f2f2));
-    background: linear-gradient(to right bottom, white 50%, #f2f2f2 53%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, white), color-stop(50%, #f2f2f2));
+    background: linear-gradient(to right bottom, white 50%, #f2f2f2 50%);
     height: 40px; }
 
 .service__wrapper {
@@ -1865,7 +1869,8 @@ input[type="radio"].visually-hidden {
 
 .map iframe {
   height: 210px;
-  width: 100%; }
+  width: 100%;
+  border: none; }
 
 @media (min-width: 660px) {
   .map {
@@ -2261,6 +2266,10 @@ input[type="radio"].visually-hidden {
   opacity: 1; }
 
 @media (min-width: 660px) {
+  .post {
+    width: 660px;
+    padding: 0 20px;
+    margin: 0 auto; }
   .post__form {
     padding: 0 20px;
     margin: 0 auto; }
@@ -2351,18 +2360,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 960px) {
   .post {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 20px; } }
-  @media (min-width: 960px) and (min-width: 660px) {
-    .post {
-      width: 660px; } }
-  @media (min-width: 960px) and (min-width: 960px) {
-    .post {
-      width: 960px;
-      padding: 0 10px; } }
-
-@media (min-width: 960px) {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto; }
   .post__form-center {
     width: 960px;
     padding: 0 10px; }
@@ -2919,7 +2919,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    position: relative; }
   .form__input-wrapper {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -2973,9 +2974,10 @@ input[type="radio"].visually-hidden {
     .form__field--name:last-child {
       padding-bottom: 0; }
   .form__field--contact {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    position: relative; }
   .form__field--email {
-    padding-left: 135px; }
+    padding-left: 70px; }
   .form__set:nth-child(3) {
     padding-top: 46px;
     padding-bottom: 60px; }
@@ -3067,7 +3069,7 @@ input[type="radio"].visually-hidden {
     padding-left: 16px;
     padding-top: 12px; }
   .field__input--contact {
-    width: 440px; }
+    width: 500px; }
   .field__input--area {
     min-height: 190px;
     padding-top: 11px;
@@ -3081,28 +3083,20 @@ input[type="radio"].visually-hidden {
     width: 60px;
     height: 60px;
     margin-top: 7px;
+    right: 0;
+    top: 0;
     text-align: center;
     padding-top: 20px;
     position: absolute; }
-  .field__input-icon--email {
-    right: 58px; }
-  .field__input-icon--phone {
-    right: 58px; }
   .field__input {
     padding-left: 20px; } }
 
 @media (min-width: 960px) {
   .field__input--contact {
-    width: 312px; }
+    width: 372px; }
   .field__input--area {
     width: 820px;
-    min-height: 125px; }
-  .field__input-icon--email {
-    top: 35px;
-    left: calc(50% + 350px); }
-  .field__input-icon--phone {
-    top: 35px;
-    left: calc(50% - 97px); } }
+    min-height: 125px; } }
 
 .checkbox__name {
   line-height: 1.6;

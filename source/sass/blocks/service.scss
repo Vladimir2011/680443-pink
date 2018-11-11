@@ -1,10 +1,11 @@
 .service {
   background-color: #f2f2f2;
+  overflow: hidden;
 
   &::before {
     display: block;
     content: "";
-    background: linear-gradient(to right bottom, white 50%, #f2f2f2 53%);
+    background: linear-gradient(to right bottom, white 50%, #f2f2f2 50%);
     height: 40px;
   }
 }

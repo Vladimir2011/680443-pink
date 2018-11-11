@@ -172,6 +172,11 @@
 
 
 @media (min-width: $tablet) {
+  .post {
+    width: 660px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 
   .post__form {
     padding: 0 20px;
@@ -301,9 +306,10 @@
 }
 
 @media (min-width: $desktop) {
-
   .post {
-    @include container;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   .post__form-center {
