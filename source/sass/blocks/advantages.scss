@@ -128,7 +128,8 @@
   }
 
   .advantages__slogan--centre {
-    padding-left: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .advantages__image-size {
@@ -183,14 +184,19 @@
     text-align: center;
     position: relative;
 
+    &:first-child {
+      padding-left: 13px;
+    }
+
     &:nth-child(2n) {
       padding-top: 270px;
+      padding-right: 78px;
     }
 
     &:last-child {
       padding-top: 270px;
       padding-bottom: 0;
-      padding-right: 0;
+      padding-right: 30px;
     }
   }
 
@@ -254,7 +260,7 @@
       height: 302px;
       position: absolute;
       content: "";
-      left: -8px;
+      left: -17px;
       top: -90px;
       background: url("../img/iphone-screen-2-desktop@1x.png");
       background-repeat: no-repeat;
@@ -275,7 +281,7 @@
       height: 302px;
       position: absolute;
       content: "";
-      left: -17px;
+      left: -27px;
       top: -90px;
       background: url("../img/iphone-screen-3-desktop@1x.png");
       background-repeat: no-repeat;

@@ -22,6 +22,7 @@
   outline: none;
   margin-top: 7px;
   padding-left: 21px;
+  color: #283645;
 
   &:hover {
     border-color: #000000;
@@ -30,6 +31,11 @@
   &:focus,
   &:active {
     border-color: #d22856;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: #283645;
   }
 }
 
@@ -93,5 +99,7 @@
   .field__input--area {
     width: 820px;
     min-height: 125px;
+    margin-top: 0;
+    padding-top: 8px;
   }
 }

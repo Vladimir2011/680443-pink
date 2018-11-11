@@ -26,6 +26,7 @@
   border-radius: 30px;
   border: 3px solid white;
   cursor: pointer;
+  font-weight: bold;
 
   &:hover,
   &:focus {
@@ -64,6 +65,7 @@
   text-align: center;
   margin: 0;
   padding-bottom: 34px;
+  font-weight: 100;
 }
 
 @media (min-width: $tablet) {
@@ -83,8 +85,8 @@
     display: block;
     text-align: center;
     padding-top: 35px;
-    padding-left: 23px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .platform__download-wrapper {

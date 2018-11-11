@@ -13,7 +13,7 @@
     content: "ПАНОРАМА ДНЯ";
 
     bottom: auto;
-    left: calc(50% + 10px);
+    left: 50%;
     background-color: #d22856;
     padding: 12px 22px;
 
@@ -21,6 +21,7 @@
     position: absolute;
     color: white;
     text-align: center;
+    font-weight: bold;
   }
 }
 
@@ -49,7 +50,7 @@
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .item-photo__like {
@@ -79,7 +80,7 @@
   }
 
   .item-photo--day::before {
-    bottom: 86%;
+    bottom: 85%;
     left: 76%;
   }
 
@@ -108,6 +109,7 @@
     margin-bottom: 44px;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 15px;
   }
 
   .item-photo--day .item-photo__title {
@@ -126,18 +128,25 @@
 @media (min-width: $desktop) {
 
   .item-photo--day::before {
-    left: 77.5%;
+    top: 54px;
+    left: calc(50% + 329px);
   }
 
   .item-photo--day .item-photo__description-wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 42px;
+    padding-top: 0px;
+    min-height: 100px;
   }
 
   .item-photo--day .item-photo__like-wrapper {
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
 
   .item-photo__description-wrapper {
     margin-bottom: 55px;
+  }
+
+  .item-photo--day .item-photo__title {
+    margin-top: 16px;
   }
 }
