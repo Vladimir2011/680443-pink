@@ -2,24 +2,17 @@
   position: fixed;
   width: 320px;
   margin: 0 auto;
-
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
+  display: none;
   background-color: #fff;
   box-shadow: 7px 0px 15px rgba(0, 0, 0, 0.7);
 }
 
-.pop-up-position--accept {
-  top: 0;
-  left: 0;
-  right: 0;
-  display: none;
-}
-
-.pop-up-position--error {
-  top: 0;
-  left: 0;
-  right: 0;
-  display: none;
+.pop-up--shown {
+  display: block;
 }
 
 .pop-up__header {
@@ -118,7 +111,7 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .pop-up {
     width: 780px;
   }

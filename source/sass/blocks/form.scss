@@ -46,7 +46,7 @@
 }
 
 .form__set-title--comment {
-  padding-bottom: 9px;
+  padding-bottom: 15px;
 }
 
 .form__set--background {
@@ -60,7 +60,7 @@
   padding-top: 42px;
 }
 
-.form__note--color {
+.form__note-color {
   color: red;
 }
 
@@ -101,6 +101,10 @@
     background-color: #1c9b5e;
     color: rgba(255,255,255, 0.3);
   }
+}
+
+.form__input-wrapper {
+  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet) {
@@ -194,7 +198,7 @@
   }
 
   .form__set-center--app {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 67px;
     padding-bottom: 17px;
   }
@@ -226,19 +230,19 @@
   }
 
   .form__set-center--contact {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 44px;
     padding-left: 60px;
   }
 
   .form__set-center--checkbox {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-top: 60px;
     padding-left: 58px;
   }
 
   .form__set-center--comment {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     padding-bottom: 25px;
     padding-top: 47px;
   }
@@ -259,6 +263,13 @@
   .form__field--contact {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .form__input-wrapper {
+    order: 1;
+    display: flex;
+    padding-bottom: 0;
   }
 }
 
@@ -275,14 +286,11 @@
     background-color: #ffffff;
   }
 
-  .achievement {
-    order: -1;
-  }
-
   .form__wrapper {
     width: 940px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
   }
 
   .form__set {
@@ -322,25 +330,30 @@
 
   .form__field--contact {
     padding-bottom: 20px;
+    position: relative;
+  }
+
+  .form__field--email {
+    padding-left: 70px;
   }
 
   .form__set:nth-child(3) {
     padding-top: 46px;
-    padding-bottom: 50px;
-  }
-
-  .form__set:nth-child(5) {
-    padding-top: 74px;
     padding-bottom: 60px;
   }
 
+  .form__set:nth-child(5) {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+
   .form__set-center--contact {
+    padding-top: 35px;
     width: 940px;
   }
 
-  .form__set__wrapper-desktop {
+  .form__set-wrapper-desktop {
     display: flex;
-    justify-content: space-between;
     width: 820px;
   }
 
@@ -381,7 +394,7 @@
   .form__wrapper {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 25px;
+    padding-bottom: 4px;
   }
 
   .form__note-desktop {

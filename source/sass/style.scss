@@ -3,14 +3,14 @@
 @import "font-file.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "visually-hidden.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/platform.scss";
 @import "blocks/advantages.scss";
-@import "blocks/research.scss";
+@import "blocks/diagram.scss";
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
 @import "blocks/service.scss";
@@ -28,4 +28,3 @@
 @import "blocks/radio.scss";
 @import "blocks/button.scss";
 @import "blocks/pop-up.scss";
-@import "blocks/visually-hidden.scss";

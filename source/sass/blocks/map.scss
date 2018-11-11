@@ -2,31 +2,48 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  height: 210px;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
 }
 
-.map__image {
-  width: 100%;
+.map iframe {
   height: 210px;
+  width: 100%;
+  border: none;
 }
 
 @media (min-width: $tablet) {
   .map {
-    width: 100%;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    height: 375px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
-  .map__image {
-    width: 100%;
+  .map iframe {
     height: 375px;
   }
 }
 
 @media (min-width: $desktop) {
   .map {
-    width: 100%;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    height: 500px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
-  .map__image {
-    width: 100%;
+  .map iframe {
     height: 500px;
   }
 }

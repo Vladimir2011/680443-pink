@@ -2,6 +2,10 @@
   display: none;
 }
 
+.field__input-wrapper {
+  padding-bottom: 20px;
+}
+
 .field__name {
   font-size: 14px;
   line-height: 2;
@@ -14,26 +18,32 @@
 .field__input {
   height: 60px;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   outline: none;
   margin-top: 7px;
   padding-left: 21px;
+  color: #283645;
 
   &:hover {
-    border: 1px solid #000000;
+    border-color: #000000;
   }
 
   &:focus,
   &:active {
-    border: 1px solid #d22856;
+    border-color: #d22856;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: #283645;
   }
 }
 
 .field__input--area {
-  height: 200px;
-  width: 280px;
+  min-height: 200px;
   padding-top: 11px;
   line-height: 1.8;
+  resize: vertical;
 }
 
 @media (min-width: $tablet) {
@@ -43,11 +53,6 @@
     padding-left: 0;
   }
 
-  .field__input-wrapper {
-    order: 1;
-    display: flex;
-  }
-
   .field__name--contact {
     order: 2;
     padding-left: 16px;
@@ -55,16 +60,16 @@
   }
 
   .field__input--contact {
-    width: 440px;
+    width: 500px;
   }
 
   .field__input--area {
-    height: 190px;
-    width: 500px;
+    min-height: 190px;
     padding-top: 11px;
     line-height: 1.8;
     margin-left: 60px;
     margin-right: 60px;
+    width: 500px;
   }
 
   .field__input-icon {
@@ -73,8 +78,11 @@
     width: 60px;
     height: 60px;
     margin-top: 7px;
+    right: 0;
+    top: 0;
     text-align: center;
     padding-top: 20px;
+    position: absolute;
   }
 
   .field__input {
@@ -85,11 +93,13 @@
 @media (min-width: $desktop) {
 
   .field__input--contact {
-    width: 312px;
+    width: 372px;
   }
 
   .field__input--area {
     width: 820px;
-    height: 125px;
+    min-height: 125px;
+    margin-top: 0;
+    padding-top: 8px;
   }
 }

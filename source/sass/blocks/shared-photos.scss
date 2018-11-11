@@ -21,13 +21,8 @@
     padding-bottom: 77px;
   }
 
-  .shared-photos__wrapper .item-photo:first-child {
+  .shared-photos__wrapper .shared-photos__item  {
     width: 300px;
-  }
-
-  .shared-photos__wrapper .item-photo {
-    width: 300px;
-    margin: 0;
   }
 
   .shared-photos__wrapper {
@@ -39,19 +34,7 @@
 
 @media (min-width: $desktop) {
   .shared-photos__wrapper .item-photo:first-child {
-    width: 300px;
     margin: 0;
-  }
-
-  .shared-photos__wrapper .item-photo {
-    width: 300px;
-    margin: 0;
-  }
-
-  .shared-photos__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   .shared-photos__header {
