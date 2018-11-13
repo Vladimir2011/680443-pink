@@ -120,6 +120,7 @@
   .reviews__list {
     padding-left: 120px;
     padding-right: 120px;
+    position: relative;
   }
 
   .reviews__author-name {
@@ -128,5 +129,10 @@
 
   .reviews__proffesion {
     font-size: 18px;
+    padding-top: 0;
+  }
+
+  .reviews__description {
+    padding-top: 16px;
   }
 }

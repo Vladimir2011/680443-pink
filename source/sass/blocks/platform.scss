@@ -20,6 +20,7 @@
   width: 280px;
   padding: 11px 0;
 
+  font-size: 18px;
   color: #ffffff;
 
   background-color: transparent;
@@ -71,6 +72,7 @@
 @media (min-width: $tablet) {
   .platform {
     background-color: transparent;
+
     @include container;
   }
 
@@ -142,5 +144,4 @@
   .platform__download {
     font-size: 21px;
   }
-
 }

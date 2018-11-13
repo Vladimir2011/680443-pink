@@ -33,7 +33,7 @@
   }
 
   &:active {
-    color:rgba(166, 45, 84, 0.3);
+    color: rgba(166, 45, 84, 0.3);
   }
 }
 
@@ -92,7 +92,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -130,7 +129,6 @@
 }
 
 @media (min-width: $tablet) {
-
   .main-nav__toggle {
     left: calc(50% + 240px);
     width: 80px;
@@ -143,7 +141,6 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-
     &::before,
     &::after {
       top: 35px;
@@ -194,7 +191,7 @@
     border: none;
 
     &:active {
-      color:rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -210,4 +207,3 @@
     border-bottom: 2px solid white;
   }
 }
-

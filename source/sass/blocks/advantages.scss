@@ -79,12 +79,11 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
       height: 280px;
-      }
     }
   }
+}
 
 @media (min-width: $tablet) {
-
   .advantages__wrapper-center {
     @include container;
     display: flex;
@@ -94,18 +93,18 @@
 
 
     &::after {
-    width: 268px;
-    height: 481px;
-    left: 19px;
-    top: -35px;
-    background: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    z-index: 3;
-    background-size: 268px auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      width: 268px;
       height: 481px;
+      left: 19px;
+      top: -35px;
+      background: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
+      z-index: 3;
+      background-size: 268px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        height: 481px;
       }
     }
   }
@@ -148,8 +147,8 @@
 }
 
 @media (min-width: $desktop) {
-
   .advantages__wrapper {
+    padding-bottom: 0;
 
     &::before {
       height: 70px;
@@ -168,7 +167,7 @@
   }
 
   .advantages__header {
-    padding-top: 76px;
+    padding-top: 71px;
     padding-bottom: 100px;
     padding-right: 100px;
     padding-left: 100px;
@@ -222,10 +221,6 @@
     height: 300px;
   }
 
-  .advantages__wrapper {
-    padding-bottom: 0;
-  }
-
   .advantages__wrapper-center {
     &::after {
       display: none;
@@ -233,7 +228,6 @@
   }
 
   .advantages__item--grey {
-
     &::before {
       width: 292px;
       position: absolute;
@@ -254,7 +248,6 @@
   }
 
   .advantages__item--pink {
-
     &::before {
       width: 292px;
       height: 302px;
@@ -275,7 +268,6 @@
   }
 
   .advantages__item--pink-smile {
-
     &::before {
       width: 280px;
       height: 302px;
@@ -294,5 +286,4 @@
       }
     }
   }
-
 }
