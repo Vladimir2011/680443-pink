@@ -29,7 +29,7 @@
 }
 
 .slider__toggle--active::after {
-  background: #fff;
+  background: #ffffff;
   opacity: 1;
   box-shadow: 0 0 0 3px black;
 }
@@ -59,26 +59,7 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
-  .slider__item-service {
-    flex-shrink: 1;
-    text-align: start;
-    transition: 0;
-    transform: none;
-  }
-
-  .slider__list-service {
-    display: block;
-    flex: none;
-  }
-
-  .slider-service {
-    overflow: auto;
-  }
-}
-
 @media (min-width: $desktop) {
-
   .slider__list {
     position: relative;
   }

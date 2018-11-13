@@ -34,7 +34,7 @@
     content: "";
 
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -4px;
 
     width: 70px;
@@ -66,10 +66,16 @@
   padding: 0;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
+  width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  transition: transform 0.2s ease;
+  transform: translateX(-100%);
 }
 
 .service__list {
   padding: 0;
+  display: flex;
 }
 
 .service__type {
@@ -104,10 +110,10 @@
   margin: 0;
 
   border: 1px solid #e5e5e5;
-  background-color: #fff;
+  background-color: #ffffff;
 
   &:first-child {
-    border-top: 0px;
+    border-top: 0;
   }
 
   &:last-child {
@@ -171,7 +177,6 @@
   }
 
   .service__list {
-    display: flex;
     width: 620px;
     align-items: flex-end;
     margin: 0;
@@ -182,6 +187,10 @@
     width: 156px;
     display: block;
     border: none;
+    flex-shrink: 1;
+    text-align: start;
+    transition: 0;
+    transform: none;
   }
 
   .service__toggles {
@@ -245,10 +254,10 @@
 }
 
 @media (min-width: $desktop) {
-
   .service__list {
     width: auto;
     display: flex;
+    position: relative;
   }
 
   .service__toggles {

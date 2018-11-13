@@ -51,14 +51,14 @@
   background-position: 0 0;
 }
 
-@media (min-width: $desktop) {
-
+@media (min-width: $tablet) {
   .checkbox__name {
     padding-left: 60px;
   }
+}
 
+@media (min-width: $desktop) {
   .checkbox--desktop {
-
     &:nth-child(2) {
       order: 2;
     }
@@ -82,7 +82,7 @@
     }
 
     &:nth-child(5) {
-      width:215px;
+      width: 215px;
     }
   }
 }
