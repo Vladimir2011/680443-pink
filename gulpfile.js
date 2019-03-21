@@ -12,13 +12,17 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
+var normalize = require("postcss-normalize");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      normalize({
+        forceImport: true
+      })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
